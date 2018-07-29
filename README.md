@@ -1,0 +1,2 @@
+# Essence
+Install Essence Masternode
