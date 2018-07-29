@@ -28,7 +28,7 @@ Install shell script for Essence Masternode
 ```
 After MN start installation on VPS or it just finish you need to configure the desktop wallet. 
 1. Open Essence wallet. If you do not have check [here]()
-2. Go to "**Receive**" and create new address. In to "**Label:**" write your mn label and click on "**Request payment**". The copy address.
+2. Go to **"Receive"** and create new address. In to "**Label:**" write your mn label and click on "**Request payment**". The copy address.
 3. Go to "**Send**". In to "**Pay To:**" paste new address and in to "**Amount:**" write exactly 1000 ESS and press "**Send**" 
 4. Wait that payment will have complete confirmations.
 5. Go to "**Tools**" -> "**Debug Console**" -> "**Console**"
