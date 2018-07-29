@@ -15,20 +15,21 @@ Install shell script for Essence Masternode
 
 ## Installation
 
-```
 1. Create new VPS. Location is not important, for running server choose Linux Ubuntu 16.4.
 2. Connect true SSH on VPS with PuTTY.
-3. Paste this command line " " on installation will start. 
-4. Script will ask you for Masternode Kay(Step 6 from Desktop wallet setup)
+3. Paste this command line and installation will start.
 ```
+wget https://raw.githubusercontent.com/gapimankr/Essence/master/essencemn.sh && chmod +x essencemn.sh && sudo ./essencemn.sh
+``` 
+4. Script will ask you for Masternode Kay(Step 6 from Desktop wallet setup)
+
 ***
 
 ## Desktop wallet setup
 
-```
 After MN start installation on VPS or it just finish you need to configure the desktop wallet. 
-1. Open Essence wallet. If you do not have check [here]()
-2. Go to **"Receive"** and create new address. In to "**Label:**" write your mn label and click on "**Request payment**". The copy address.
+1. Open Essence wallet. If you do not have check [here](https://github.com/essencecoin/essence/releases)
+2. Go to "**Receive**" and create new address. In to "**Label:**" write your mn label and click on "**Request payment**". The copy address.
 3. Go to "**Send**". In to "**Pay To:**" paste new address and in to "**Amount:**" write exactly 1000 ESS and press "**Send**" 
 4. Wait that payment will have complete confirmations.
 5. Go to "**Tools**" -> "**Debug Console**" -> "**Console**"
@@ -43,9 +44,11 @@ Alias Address Privkey TxHash TxIndex
 * Privkey: **Masternode Private Key from Step 6**
 * TxHash: **First value from Step 6**
 * TxIndex:  **Second value from Step 6**
-Example:
+
 ```
-MN1 127.0.0.2:5335 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
+Example:
+MN1 127.0.0.2:5335 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg
+2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
 ```
 9. Save and close the file.
 10. Go to "**Masternodes**". If you tab is not shown, please enable it from: "**Settings**" -> "**Options**" -> "**Wallet**" -> "**Show Masternodes Tab**"
@@ -53,12 +56,11 @@ MN1 127.0.0.2:5335 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c
 12. Check PuTTY command line. If installation and synchronization is finish then script will tell you that you can start MN from wallet. 
 	In this case click on "**MN1**" and "**Start alias**"(if this do not work start is from Debug Console with command line "**masternode start-alias MN1**"). 
 	If all is correct you will get message that masternode successful start.
-```
 ***
 
 ## Start on boot
 
-If VPS restart setup self start up on reboot.
+If VPS restart, setup this self start up on reboot.
 1. Login on VPS true PuTTY and paste "**crontab -e**" press 2(or other number). On the bottom paste "**@reboot /usr/local/bin/essenced**". Close and save with "**CTRL+X**" and "**Y**" and "**ENTER**". 
 
 ***
@@ -69,7 +71,7 @@ VPS server:
 1. essence-cli masternode status
 2. essence-cli getinfo
 3. essence-cli mnsync status
-4. killall essenced *close all Daemon
+4. killall essenced *close all essence daemon
 5. nano .essencecore/essence.conf *Config file use it only of you know what are you doing.
 6. essenced --daemon *Start Essence Daemon 
 
@@ -78,9 +80,8 @@ VPS server:
 ## Donations 
 
 If this guild help you, then you can sent me some tips ;)
-```
-**ESS**: ER5fnEkiVoufF7b28WgkPMMR78ac44RHU6
-**BTC**: 12nxh3nUTJHve3XGaXrh692xQZMVLJLFJm
+
+**ESS**: ER5fnEkiVoufF7b28WgkPMMR78ac44RHU6  
+**BTC**: 12nxh3nUTJHve3XGaXrh692xQZMVLJLFJm  
 **DOGE**: DJbHoCkzwzqjyrJxT1hGwN1rzZdJFzBseG
-```
 ***
