@@ -29,7 +29,7 @@ wget https://raw.githubusercontent.com/gapimankr/Essence/master/essencemn.sh && 
 
 After MN start installation on VPS or it just finish you need to configure the desktop wallet. 
 1. Open Essence wallet. If you do not have check [here](https://github.com/essencecoin/essence/releases)
-2. Go to "**Receive**" and create new address. In to "**Label:**" write your mn label and click on "**Request payment**". The copy address.
+2. Go to "**Receive**" and create new address. In to "**Label:**" write your mn label and click on "**Request payment**". Then copy address.
 3. Go to "**Send**". In to "**Pay To:**" paste new address and in to "**Amount:**" write exactly 1000 ESS and press "**Send**" 
 4. Wait that payment will have complete confirmations.
 5. Go to "**Tools**" -> "**Debug Console**" -> "**Console**"
@@ -47,14 +47,14 @@ Alias Address Privkey TxHash TxIndex
 
 ```
 Example:
-MN1 127.0.0.2:5335 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg
+MN1 127.0.0.2:3553 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg
 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
 ```
 9. Save and close the file.
 10. Go to "**Masternodes**". If you tab is not shown, please enable it from: "**Settings**" -> "**Options**" -> "**Wallet**" -> "**Show Masternodes Tab**"
 11. Click "**Update status**" to see your node. If it is not shown, close the wallet and start it again.
 12. Check PuTTY command line. If installation and synchronization is finish then script will tell you that you can start MN from wallet. 
-	In this case click on "**MN1**" and "**Start alias**"(if this do not work start is from Debug Console with command line "**masternode start-alias MN1**"). 
+	In this case click on "**MN1**" and "**Start alias**"(if this do not work start it from Debug Console with command line "**masternode start-alias MN1**"). 
 	If all is correct you will get message that masternode successful start.
 ***
 
